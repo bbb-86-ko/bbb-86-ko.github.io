@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Your site title</title>
+    <link>Your%20site%20URL/</link>
+    <description>Recent content on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&amp;copy; Copyright notice</copyright>
     <lastBuildDate>Sun, 19 Apr 2020 16:12:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="Your%20site%20URL/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My Second Post</title>
-      <link>http://example.org/posts/my-second-post/</link>
+      <link>Your%20site%20URL/posts/my-second-post/</link>
       <pubDate>Sun, 19 Apr 2020 16:12:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/my-second-post/</guid>
+      <guid>Your%20site%20URL/posts/my-second-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>Your%20site%20URL/posts/my-first-post/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:56 +0000</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>Your%20site%20URL/posts/my-first-post/</guid>
       <description></description>
     </item>
     
