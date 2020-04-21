@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>Your%20site%20URL/posts/my-second-post/</loc>
-    <lastmod>2020-04-19T16:12:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>Your%20site%20URL/posts/</loc>
-    <lastmod>2020-04-19T16:12:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>Your%20site%20URL/</loc>
-    <lastmod>2020-04-19T16:12:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>Your%20site%20URL/posts/my-first-post/</loc>
-    <lastmod>2020-04-19T16:00:56+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>Your%20site%20URL/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>Your%20site%20URL/tags/</loc>
-  </url>
-  
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>http://your-site.com/de/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>http://your-site.com/en/sitemap.xml</loc>
+		
+	   	<lastmod>2020-04-19T16:12:00+00:00</lastmod>
+		
+	</sitemap>
+	
+</sitemapindex>
