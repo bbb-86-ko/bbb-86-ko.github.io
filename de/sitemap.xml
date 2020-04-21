@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://your-site.com/de/categories/</loc>
+    <loc>https://bbb-86-ko.github.io/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://your-site.com/en/categories/"
+                href="https://bbb-86-ko.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://your-site.com/de/categories/"
+                href="https://bbb-86-ko.github.io/de/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://your-site.com/de/tags/</loc>
+    <loc>https://bbb-86-ko.github.io/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://your-site.com/en/tags/"
+                href="https://bbb-86-ko.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://your-site.com/de/tags/"
+                href="https://bbb-86-ko.github.io/de/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://your-site.com/de/</loc>
+    <loc>https://bbb-86-ko.github.io/de/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://your-site.com/en/"
+                href="https://bbb-86-ko.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://your-site.com/de/"
+                href="https://bbb-86-ko.github.io/de/"
                 />
   </url>
   

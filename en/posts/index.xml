@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Your site title</title>
-    <link>http://your-site.com/en/posts/</link>
+    <link>https://bbb-86-ko.github.io/en/posts/</link>
     <description>Recent content in Posts on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; some license</copyright>
     <lastBuildDate>Sun, 19 Apr 2020 16:12:00 +0000</lastBuildDate>
     
-	<atom:link href="http://your-site.com/en/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bbb-86-ko.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My Second Post</title>
-      <link>http://your-site.com/en/posts/my-second-post/</link>
+      <link>https://bbb-86-ko.github.io/en/posts/my-second-post/</link>
       <pubDate>Sun, 19 Apr 2020 16:12:00 +0000</pubDate>
       
-      <guid>http://your-site.com/en/posts/my-second-post/</guid>
+      <guid>https://bbb-86-ko.github.io/en/posts/my-second-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>http://your-site.com/en/posts/my-first-post/</link>
+      <link>https://bbb-86-ko.github.io/en/posts/my-first-post/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:56 +0000</pubDate>
       
-      <guid>http://your-site.com/en/posts/my-first-post/</guid>
+      <guid>https://bbb-86-ko.github.io/en/posts/my-first-post/</guid>
       <description></description>
     </item>
     

@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Your site title</title>
-    <link>http://your-site.com/de/</link>
+    <link>https://bbb-86-ko.github.io/de/</link>
     <description>Recent content on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
     <copyright>&amp;copy; eine Lizenz</copyright>
     
-	<atom:link href="http://your-site.com/de/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bbb-86-ko.github.io/de/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
