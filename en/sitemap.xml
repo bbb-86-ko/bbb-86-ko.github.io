@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://bbb-86-ko.github.io/en/</loc>
+    <lastmod>2020-04-22T15:11:02+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://bbb-86-ko.github.io/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://bbb-86-ko.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://bbb-86-ko.github.io/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://bbb-86-ko.github.io/en/posts/</loc>
+    <lastmod>2020-04-22T15:11:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbb-86-ko.github.io/en/posts/%ED%88%AC%EC%9E%90%EC%97%90-%EB%8C%80%ED%95%9C-%EC%83%9D%EA%B0%81-01.-%EC%8B%AC%EC%B8%B5%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%83%9D%EA%B0%81%ED%95%98%EB%9D%BC/</loc>
+    <lastmod>2020-04-22T15:11:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbb-86-ko.github.io/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://bbb-86-ko.github.io/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://bbb-86-ko.github.io/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://bbb-86-ko.github.io/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://bbb-86-ko.github.io/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://bbb-86-ko.github.io/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://bbb-86-ko.github.io/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://bbb-86-ko.github.io/en/tags/"
+                />
+  </url>
+  
+</urlset>
