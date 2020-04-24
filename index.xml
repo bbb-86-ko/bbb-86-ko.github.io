@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bbb.86.ko</title>
+    <title>bbb.86.ko blog</title>
     <link>https://bbb-86-ko.github.io/</link>
-    <description>Recent content on bbb.86.ko</description>
+    <description>Recent content on bbb.86.ko blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-UK</language>
-    <copyright>Copyright © 2019, Jeremiah Succeed; all rights reserved.</copyright>
+    <language>en-us</language>
     <lastBuildDate>Wed, 22 Apr 2020 15:11:02 +0000</lastBuildDate>
     
 	<atom:link href="https://bbb-86-ko.github.io/index.xml" rel="self" type="application/rss+xml" />
