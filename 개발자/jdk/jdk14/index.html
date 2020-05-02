@@ -9,22 +9,22 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>jdk 14 release note :: Hugo Learn Documentation</title>
+    <title>jdk 14 :: Hugo Learn Documentation</title>
 
     
-    <link href="/css/nucleus.css?1588089406" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1588089406" rel="stylesheet">
-    <link href="/css/hybrid.css?1588089406" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1588089406" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1588089406" rel="stylesheet">
-    <link href="/css/auto-complete.css?1588089406" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1588089406" rel="stylesheet">
-    <link href="/css/theme.css?1588089406" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1588089406" rel="stylesheet">
+    <link href="/css/nucleus.css?1588441812" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1588441812" rel="stylesheet">
+    <link href="/css/hybrid.css?1588441812" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1588441812" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1588441812" rel="stylesheet">
+    <link href="/css/auto-complete.css?1588441812" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1588441812" rel="stylesheet">
+    <link href="/css/theme.css?1588441812" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1588441812" rel="stylesheet">
     
-    <link href="/css/foo.css?1588089406" rel="stylesheet"><link href="/css/bar.css?1588089406" rel="stylesheet">
+    <link href="/css/foo.css?1588441812" rel="stylesheet"><link href="/css/bar.css?1588441812" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1588089406"></script>
+    <script src="/js/jquery-3.3.1.min.js?1588441812"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1588089406"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1588089406"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1588441812"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1588441812"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bbb-86-ko.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1588089406"></script>
+<script type="text/javascript" src="/js/search.js?1588441812"></script>
 
     
   </div>
@@ -138,9 +138,9 @@
  
   
     
-      <li data-nav-id="/%EA%B0%9C%EB%B0%9C%EC%9E%90/jdk/jdk14/" title="jdk 14 release note" class="dd-item active">
+      <li data-nav-id="/%EA%B0%9C%EB%B0%9C%EC%9E%90/jdk/jdk14/" title="jdk 14" class="dd-item active">
         <a href="/%EA%B0%9C%EB%B0%9C%EC%9E%90/jdk/jdk14/">
-        jdk 14 release note
+        jdk 14
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -405,7 +405,7 @@
                   <span class="links">
                  
                  
-                   jdk 14 release note
+                   jdk 14
                  
                   </span>
                 </div>
@@ -428,7 +428,11 @@
     <li><a href="#359records-preview">359:	Records (Preview)</a></li>
     <li><a href="#361switch-expressions-standard">361:	Switch Expressions (Standard)</a></li>
     <li><a href="#362deprecate-the-solaris-and-sparc-ports">362:	Deprecate the Solaris and SPARC Ports</a></li>
-    <li><a href="#363remove-the-concurrent-mark-sweep-cms-garbage-collector">363:	Remove the Concurrent Mark Sweep (CMS) Garbage Collector</a></li>
+    <li><a href="#363remove-the-concurrent-mark-sweep-cms-garbage-collector">363:	Remove the Concurrent Mark Sweep (CMS) Garbage Collector</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
     <li><a href="#364zgc-on-macos">364:	ZGC on macOS</a></li>
     <li><a href="#365zgc-on-windows">365:	ZGC on Windows</a></li>
     <li><a href="#366deprecate-the-parallelscavenge--serialold-gc-combination">366:	Deprecate the ParallelScavenge + SerialOld GC Combination</a></li>
@@ -452,7 +456,7 @@
           
             <h1>
               
-              jdk 14 release note
+              jdk 14
             </h1>
           
 
@@ -502,6 +506,31 @@ false block의 s는 binding variable이다.
 <h2 id="361switch-expressions-standard">361:	Switch Expressions (Standard)</h2>
 <h2 id="362deprecate-the-solaris-and-sparc-ports">362:	Deprecate the Solaris and SPARC Ports</h2>
 <h2 id="363remove-the-concurrent-mark-sweep-cms-garbage-collector">363:	Remove the Concurrent Mark Sweep (CMS) Garbage Collector</h2>
+<p>Concurrent Mark Sweep (CMS) Garbage Collector를 삭제 한다고 한다.</p>
+<h4 id="non-goals">Non Goals</h4>
+<ul>
+<li>다른 GC 삭제는 목표는 아니다.</li>
+<li>JEP를 대상으로하는 릴리스와 이전의 릴리스에서 CMS GC 삭제는 목표가 아니다.</li>
+</ul>
+<h4 id="cmsgc를-삭제하는-이유">CMS GC를 삭제하는 이유.</h4>
+<p>2년전 JEP 291에서는 우리는 다른 collectors의 개발을 가속화 하고 미래 릴리즈에서 삭제를 위해 CMS collector 사용하지 않았다. 이 시간 동안, 신뢰할 수 있는 contributors가 CMS 유지 관리를 시작하지 않았다.(??이해를 못함.)</p>
+<p>이 시간 동안, contributors는 CMS 유지 관리를 시작하지 않았다.</p>
+<p>그리고 또한 JDK 6 CMS의 후속 모델인 G1의 추가 개선 사항과 함께 두가지 새로운 collectors를 소개하였다.(ZGC, Shenandoah)</p>
+<p>이 시점에서 Hotspot JVM에서 사용 가능한 GC가 만약 CMS 성능을 능가하지 않는 경우 CMS를 제거하기에 충분한 오버 헤드가 있다.</p>
+<p>향후 기존 GC의 개선으로 CMS의 필요성이 더욱 줄어들 것으로 예상된다.</p>
+<h4 id="설명">설명</h4>
+<p>이 변경으로 CMS 컴파일이 비활성화되고 소스트리에서 gc/cms 디렉토리의 내용이 제거되고 CMS에만 관련된 옵션이 제거된다.</p>
+<p>또한 문서에서 CMS에 대한 References는 제거된다.</p>
+<p>그리고 CMS를 사용하려는 테스트는 제거되거나 필요에 따라 적용된다.</p>
+<h4 id="메시지">메시지</h4>
+<p>Trying to use CMS via the -XX:+UseConcMarkSweepGC option will result in the following warning message:</p>
+<pre><code>Java HotSpot(TM) 64-Bit Server VM warning: Ignoring option UseConcMarkSweepGC; \
+support was removed in &lt;version&gt;
+and the VM will continue execution using the default collector.
+</code></pre><h4 id="대안">대안</h4>
+<p>CMS를 위한 코드는 repository 안에 유지할 수 있지만 컴파일 할 수 없습니다.</p>
+<p>사용자는 G1 GC 또는 다른 collectors 옮길수 있습니다.</p>
+<p>절대적으로 CMS가 필요한 사용자는 이전 릴리스에서 지원되는 동안 사용할 수 있습니다.</p>
 <h2 id="364zgc-on-macos">364:	ZGC on macOS</h2>
 <h2 id="365zgc-on-windows">365:	ZGC on Windows</h2>
 <h2 id="366deprecate-the-parallelscavenge--serialold-gc-combination">366:	Deprecate the ParallelScavenge + SerialOld GC Combination</h2>
@@ -711,19 +740,19 @@ false block의 s는 binding variable이다.
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1588089406"></script>
-    <script src="/js/perfect-scrollbar.min.js?1588089406"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1588089406"></script>
-    <script src="/js/jquery.sticky.js?1588089406"></script>
-    <script src="/js/featherlight.min.js?1588089406"></script>
-    <script src="/js/highlight.pack.js?1588089406"></script>
+    <script src="/js/clipboard.min.js?1588441812"></script>
+    <script src="/js/perfect-scrollbar.min.js?1588441812"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1588441812"></script>
+    <script src="/js/jquery.sticky.js?1588441812"></script>
+    <script src="/js/featherlight.min.js?1588441812"></script>
+    <script src="/js/highlight.pack.js?1588441812"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1588089406"></script>
-    <script src="/js/learn.js?1588089406"></script>
-    <script src="/js/hugo-learn.js?1588089406"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1588441812"></script>
+    <script src="/js/learn.js?1588441812"></script>
+    <script src="/js/hugo-learn.js?1588441812"></script>
 
-    <link href="/mermaid/mermaid.css?1588089406" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1588089406"></script>
+    <link href="/mermaid/mermaid.css?1588441812" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1588441812"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
