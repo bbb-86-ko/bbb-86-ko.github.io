@@ -12,19 +12,19 @@
     <title>jdk 14 :: Hugo Learn Documentation</title>
 
     
-    <link href="/css/nucleus.css?1588497776" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1588497776" rel="stylesheet">
-    <link href="/css/hybrid.css?1588497776" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1588497776" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1588497776" rel="stylesheet">
-    <link href="/css/auto-complete.css?1588497776" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1588497776" rel="stylesheet">
-    <link href="/css/theme.css?1588497776" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1588497776" rel="stylesheet">
+    <link href="/css/nucleus.css?1588498084" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1588498084" rel="stylesheet">
+    <link href="/css/hybrid.css?1588498084" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1588498084" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1588498084" rel="stylesheet">
+    <link href="/css/auto-complete.css?1588498084" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1588498084" rel="stylesheet">
+    <link href="/css/theme.css?1588498084" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1588498084" rel="stylesheet">
     
-    <link href="/css/foo.css?1588497776" rel="stylesheet"><link href="/css/bar.css?1588497776" rel="stylesheet">
+    <link href="/css/foo.css?1588498084" rel="stylesheet"><link href="/css/bar.css?1588498084" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1588497776"></script>
+    <script src="/js/jquery-3.3.1.min.js?1588498084"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1588497776"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1588497776"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1588498084"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1588498084"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bbb-86-ko.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1588497776"></script>
+<script type="text/javascript" src="/js/search.js?1588498084"></script>
 
     
   </div>
@@ -600,9 +600,7 @@ switch (day) {
 };
 </code></pre><p>위 코드는 switch expression을 사용하였고 이 같은 switch expression은 이전의 코드보다 더 명확하고 안전한하다.</p>
 <h4 id="description-1">Description</h4>
-<ol>
-<li>Arrow labels</li>
-</ol>
+<h5 id="1-arrow-labels">1) Arrow labels</h5>
 <p>&ldquo;case L -&gt;&rdquo; labels을 추가하였고 만약 L이 매치되며 &ldquo;-&gt;&rdquo; 오른쪽을 실행한다.</p>
 <pre><code>For example, given the following switch statement that uses the new form of labels:
 
@@ -623,9 +621,7 @@ results in the following output:
 one
 two
 many
-</code></pre><ol start="2">
-<li>Switch expressions</li>
-</ol>
+</code></pre><h5 id="2-switch-expressions">2) Switch expressions</h5>
 <p>switch statement를 expression으로 사용할 수 있다.</p>
 <pre><code>static void howMany(int k) {
     System.out.println(
@@ -648,9 +644,7 @@ T result = switch (arg) {
 <p>type을 알고 있으면 switch expression의 type은 target type이다. 만약 그렇지 않으면
 standalone type은 각 case arm의 유형을 합하여 계산됩니다.
 (arm에서 서로 다른 타입을 전달하면 어떻게 되는지??)</p>
-<ol start="3">
-<li>Yielding a value</li>
-</ol>
+<h5 id="3-yielding-a-value">3) Yielding a value</h5>
 <p>대부분의 switch expressions는 &ldquo;case L -&gt;&rdquo; switch label 오른쪽에 single expression을 가지고 있다.</p>
 <p>full block을 사용하고 return value가 필요한 경우 enclosing switch expression으로 yield를 사용한다.</p>
 <pre><code>int j = switch (day) {
@@ -676,9 +670,7 @@ standalone type은 각 case arm의 유형을 합하여 계산됩니다.
 </code></pre><p>위 코드는 이전 switch labels에서의 yield 사용을 예로 보여준다.</p>
 <p>break 및 yield의 두 statements는 switch statements과 switch expressions 간에 쉽게 구분 할 수 있다. switch statement는 break statement의 target일 수 있지만 switch expression는 아니다. 반대로 switch expression은 yield statement의 target일 수 있지만 switch statement는 아니다. (이해가 안된다.)</p>
 <p>yield는 제한된 식별자이다.(var) 클래스 이름으로 yield는 불가하다.</p>
-<ol start="4">
-<li>Exhaustiveness</li>
-</ol>
+<h5 id="4-exhaustiveness">4) Exhaustiveness</h5>
 <p>switch expression의 경우 가능한 모든 값에 매치되는 switch label이어야 한다.</p>
 <p>실제로 이것은 default가 필요함을 의미한다. 그러나 알려진 모든 constants를 포괄하는 enum switch expression의 경우 enum definition가 compile-time과 runtime간에 변경되었음을 나타내는 default 절이 compiler에 의해 삽입됩니다.</p>
 <p>implicit default clause 삽입을 사용하면 코드가 좋아진다. 이제 코드가 다시 컴파일 될 때 컴파일러는 모든 사례가 명시 적으로 처리되는지 확인합니다.</p>
@@ -954,19 +946,19 @@ and the VM will continue execution using the default collector.
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1588497776"></script>
-    <script src="/js/perfect-scrollbar.min.js?1588497776"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1588497776"></script>
-    <script src="/js/jquery.sticky.js?1588497776"></script>
-    <script src="/js/featherlight.min.js?1588497776"></script>
-    <script src="/js/highlight.pack.js?1588497776"></script>
+    <script src="/js/clipboard.min.js?1588498084"></script>
+    <script src="/js/perfect-scrollbar.min.js?1588498084"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1588498084"></script>
+    <script src="/js/jquery.sticky.js?1588498084"></script>
+    <script src="/js/featherlight.min.js?1588498084"></script>
+    <script src="/js/highlight.pack.js?1588498084"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1588497776"></script>
-    <script src="/js/learn.js?1588497776"></script>
-    <script src="/js/hugo-learn.js?1588497776"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1588498084"></script>
+    <script src="/js/learn.js?1588498084"></script>
+    <script src="/js/hugo-learn.js?1588498084"></script>
 
-    <link href="/mermaid/mermaid.css?1588497776" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1588497776"></script>
+    <link href="/mermaid/mermaid.css?1588498084" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1588498084"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
