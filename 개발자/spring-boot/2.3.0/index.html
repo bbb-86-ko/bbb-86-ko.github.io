@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>개발자 :: I am BBB</title>
+    <title>Spring Boot 2.3 Release Notes :: I am BBB</title>
 
     
     <link href="/css/nucleus.css?1591024450" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/%EA%B0%9C%EB%B0%9C%EC%9E%90/">
+  <body class="" data-url="/%EA%B0%9C%EB%B0%9C%EC%9E%90/spring-boot/2.3.0/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -80,7 +80,7 @@
     
     <li data-nav-id="/%EA%B0%9C%EB%B0%9C%EC%9E%90/" title="개발자" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/%EA%B0%9C%EB%B0%9C%EC%9E%90/">
@@ -169,7 +169,7 @@
   
     
     <li data-nav-id="/%EA%B0%9C%EB%B0%9C%EC%9E%90/spring-boot/" title="spring boot release note" class="dd-item 
-        
+        parent
         
         
         ">
@@ -197,7 +197,7 @@
  
   
     
-      <li data-nav-id="/%EA%B0%9C%EB%B0%9C%EC%9E%90/spring-boot/2.3.0/" title="Spring Boot 2.3 Release Notes" class="dd-item ">
+      <li data-nav-id="/%EA%B0%9C%EB%B0%9C%EC%9E%90/spring-boot/2.3.0/" title="Spring Boot 2.3 Release Notes" class="dd-item active">
         <a href="/%EA%B0%9C%EB%B0%9C%EC%9E%90/spring-boot/2.3.0/">
         Spring Boot 2.3 Release Notes
         <i class="fas fa-check read-icon"></i>
@@ -486,7 +486,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/bbb-86-ko/blog/blob/master/%ea%b0%9c%eb%b0%9c%ec%9e%90/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/bbb-86-ko/blog/blob/master/%ea%b0%9c%eb%b0%9c%ec%9e%90/spring-boot/2.3.0.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -501,13 +501,42 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
-                   개발자
+                   Spring Boot 2.3 Release Notes
                  
                   </span>
                 </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#changes-to-minimum-requirements">Changes to minimum requirements</a></li>
+    <li><a href="#validation-starter-no-longer-included-in-web-starters">Validation Starter no longer included in web starters</a></li>
+    <li><a href="#bootstrapmode-for-jpa-repositories">BootstrapMode for JPA repositories</a></li>
+    <li><a href="#spring-cloud-connectors-starter-has-been-removed">Spring Cloud Connectors starter has been removed</a></li>
+    <li><a href="#embedded-servlet-web-server-threading-configuration">Embedded Servlet web server threading configuration</a></li>
+    <li><a href="#java-14-지원">Java 14 지원</a></li>
+    <li><a href="#build-oci-images-with-cloud-native-buildpacks">Build OCI images with Cloud Native Buildpacks</a></li>
+    <li><a href="#predictable-classpath-ordering-when-exploding-fat-jars">Predictable Classpath Ordering When Exploding Fat Jars</a></li>
+    <li><a href="#support-of-wildcard-locations-for-configuration-files">Support of wildcard locations for configuration files</a></li>
+    <li><a href="#graceful-shutdown">Graceful shutdown</a></li>
+    <li><a href="#liveness-and-readiness-probes">Liveness and Readiness probes.</a></li>
+    <li><a href="#configurable-base-path-for-webflux-applications">Configurable base path for WebFlux applications</a></li>
+    <li><a href="#date-time-conversion-in-web-applications">Date-Time conversion in web applications</a></li>
+    <li><a href="#actuator-improvements">Actuator Improvements</a></li>
+    <li><a href="#rsocket-support-for-spring-integration">RSocket support for Spring Integration</a></li>
+    <li><a href="#binding-to-period">Binding to Period</a></li>
+    <li><a href="#slice-test-for-web-services">Slice test for Web Services</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
                 
               </div>
             </div>
@@ -516,29 +545,105 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Spring Boot 2.3 Release Notes
+            </h1>
           
 
         
 
 
+<p><a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.3-Release-Notes">Spring Boot 2.3 Release Notes</a></p>
+<h2 id="changes-to-minimum-requirements">Changes to minimum requirements</h2>
+<ul>
+<li>Gradle 6.3+. 5.6.x도 지원하지만 deprecated 되었다.</li>
+<li>jetty 9.4.22+</li>
+</ul>
+<h2 id="validation-starter-no-longer-included-in-web-starters">Validation Starter no longer included in web starters</h2>
+<p>Web과 WebFlux starters는 validation Starter는 기본적으로 더 이상 의존하지 않는다.<br>
+스스로 starter추가가 필요하다. 이렇게 판단한 이유는 아래 깃에서 확인할 수 있다.<br>
+(많은 application이 validation features를 사용하지 않는다고 판단으로 기본 의존성에서 제외했다는데&hellip;)<br>
+<a href="https://github.com/spring-projects/spring-boot/issues/19550">issues 19550</a></p>
+<h2 id="bootstrapmode-for-jpa-repositories">BootstrapMode for JPA repositories</h2>
+<p>기본 BootstrapMode는 deferred이고 startup 시간 개선했다.<br>
+아래 설정으로 기본값을 바꿀수있다.</p>
+<pre><code>spring.data.jpa.repositories.bootstrap-mode=default
+</code></pre>
+<p><a href="https://github.com/spring-projects/spring-boot/issues/16230">issues 16230</a></p>
+<h2 id="spring-cloud-connectors-starter-has-been-removed">Spring Cloud Connectors starter has been removed</h2>
+<p>The Spring Cloud Connectors starter was deprecated in 2.2 in favor of Java CFEnv.
+This starter has been removed, and Spring Cloud Connectors dependencies are no longer included in Spring Boot’s managed dependencies.</p>
+<h2 id="embedded-servlet-web-server-threading-configuration">Embedded Servlet web server threading configuration</h2>
+<p>The configuration properties for configuring the threads used by embedded Servlet web servers (Jetty, Tomcat, and Undertow) have moved to dedicated threads groups.
+The properties can now be found in server.jetty.threads, server.tomcat.threads, and server.undertow.threads.
+The old properties remain in a deprecated form to ease migration.</p>
+<h2 id="java-14-지원">Java 14 지원</h2>
+<h2 id="build-oci-images-with-cloud-native-buildpacks">Build OCI images with Cloud Native Buildpacks</h2>
+<p>Cloud Native Buildpacks으로 OCI(Open Container Initiative) images 빌드할 수 있다.<br>
+Cloud Native Buildpacks를 이용해서 Docker images 빌드를 위한 지원을 한다.<br>
+spring-boot:build-image와 bootBuildImage task가 추가 되었다.<br>
+Paketo java buildpack이 기본 이미지 생성에 사용되고 있다.</p>
+<p>Build layered jars for inclusion in a Docker image
+???</p>
+<h2 id="predictable-classpath-ordering-when-exploding-fat-jars">Predictable Classpath Ordering When Exploding Fat Jars</h2>
+<p>Fat jars built with Maven and Gradle now include an index file.
+index file이 포함된다. jar를 풀어졌을때 인덱스 파일은 클래스 경로의 순서가 jar을 직접 실행할 때와 동일한 지 확인하는 데 사용됩니다.<br>
+Fat jars(uber-jar)
+응용 프로그램을 실행하는데 필요한 클래스와 의존성을 포함한 self-sufficient 아카이브이다.<br>
+<a href="https://www.baeldung.com/gradle-fat-jar">https://www.baeldung.com/gradle-fat-jar</a></p>
+<h2 id="support-of-wildcard-locations-for-configuration-files">Support of wildcard locations for configuration files</h2>
+<p>설정파일들을 위해 wildcard가 지원된다.<br>
+Spring boot는 configuration 파일들을 로딩할때 wildcard를 지원한다.<br>
+기본적으로 config/*/ 의 와일드카드 위치가 지원된다.<br>
+config properties의 multiple source가 있을 때Kubernetes와 같은 환경에서 유용하다.<br>
+예) mysql과 redis 설정을 분리한다고 할때 아래와 같이 나눌수있다.</p>
+<pre><code>/config/mysql/application.properties
+/config/redis/application.properties
+</code></pre>
+<h2 id="graceful-shutdown">Graceful shutdown</h2>
+<p>모든 embedded web servers(Jetty, Reactor Netty, Tomcat, Undertow)과 reactive, Servlet을 기반한 web applications 에 Graceful shutdown이 지원된다.</p>
+<p>server.shutdown=graceful 설정을 했을때 종료에 대해서 web server는 새로운 요청을 더이상 허용하지 않는다. 그리고 활성화된 요청이 완료되기 위해 grace period 동안 기다린다.<br>
+grace period는 spring.lifecycle.timeout-per-shutdown-phase이용해서 설정할 수 있다.<br>
+<a href="https://docs.spring.io/spring-boot/docs/2.3.0.RELEASE/reference/html/spring-boot-features.html#boot-features-graceful-shutdown">boot-features-graceful-shutdown</a></p>
+<h2 id="liveness-and-readiness-probes">Liveness and Readiness probes.</h2>
+<p>application이 살아있는지 traffic을 제어할 준비가 되었는지 알수 있게 되었다.<br>
+management.health.probes.enabled=true 설정으로 endpoint를 사용할 수 있다.</p>
+<pre><code>liveness : /actuator/health/liveness
+readiness : /actuator/health/readiness
+</code></pre>
+<p><a href="https://spring.io/blog/2020/03/25/liveness-and-readiness-probes-with-spring-boot">liveness-and-readiness-probes-with-spring-boot</a></p>
+<h2 id="configurable-base-path-for-webflux-applications">Configurable base path for WebFlux applications</h2>
+<p>모든 web handlers의 base path를 설정할 수 있다.</p>
+<pre><code>spring.webflux.base-path
+</code></pre>
+<h2 id="date-time-conversion-in-web-applications">Date-Time conversion in web applications</h2>
+<p>web applications내에서 time과 date-time 값의 변환이 application properties로 설정할 수 있다. iso 값을 지원한다. (ISO-8601)</p>
+<pre><code>spring.mvc.format.date
+spring.mvc.format.date-time
+spring.mvc.format.time
+spring.webflux.format.date
+spring.webflux.format.date-time
+spring.webflux.format.time
+</code></pre>
+<p><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#web-properties">web-properties</a></p>
+<h2 id="actuator-improvements">Actuator Improvements</h2>
+<h2 id="rsocket-support-for-spring-integration">RSocket support for Spring Integration</h2>
+<p>RSocket auto-configuration을 제공한다.</p>
+<h2 id="binding-to-period">Binding to Period</h2>
+<p>기간특성이 필요하다면 java.time.Period를 사용하면 된다.</p>
+<h2 id="slice-test-for-web-services">Slice test for Web Services</h2>
+<p>@WebServiceClientTest는 web services의 slice testing을 지원한다.</p>
+<p>Miscellaneous(잡다한.. 그외)</p>
+<p>Deprecations in Spring Boot 2.3</p>
 
-	<h2 id="개발자">개발자</h2>
-<h1 id="what-is-my-goal">what is my goal?</h1>
-<p>안주하지 않고 멈추지 않고 근성으로</p>
 
-
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
-        
-            </div> 
         
         </div> 
         
@@ -621,6 +726,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -634,6 +740,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -655,6 +762,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -828,3 +938,4 @@
 
   </body>
 </html>
+

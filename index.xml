@@ -81,5 +81,19 @@ Summary Pattern matching allows common logic in a program
 기존 instanceof 사용의 예. if (obj instanceof String) { String s = (String) obj; // use s } Motivation 기존의 처리는 1) type 확인, 2) type casting, 3) 새로운 local variable를 사용하고있다. 이런 사용은 코드를 장황하게 만든다. 그리고 3가지의 요인으로 프로그램에 에러가 발생할 수있는 상황을 만들 수있다.</description>
     </item>
     
+    <item>
+      <title>Spring Boot 2.3 Release Notes</title>
+      <link>https://bbb-86-ko.github.io/%EA%B0%9C%EB%B0%9C%EC%9E%90/spring-boot/2.3.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bbb-86-ko.github.io/%EA%B0%9C%EB%B0%9C%EC%9E%90/spring-boot/2.3.0/</guid>
+      <description>Spring Boot 2.3 Release Notes
+Changes to minimum requirements  Gradle 6.3+. 5.6.x도 지원하지만 deprecated 되었다. jetty 9.4.22+  Validation Starter no longer included in web starters Web과 WebFlux starters는 validation Starter는 기본적으로 더 이상 의존하지 않는다.
+스스로 starter추가가 필요하다. 이렇게 판단한 이유는 아래 깃에서 확인할 수 있다.
+(많은 application이 validation features를 사용하지 않는다고 판단으로 기본 의존성에서 제외했다는데&amp;hellip;)
+issues 19550
+BootstrapMode for JPA repositories 기본 BootstrapMode는 deferred이고 startup 시간 개선했다.</description>
+    </item>
+    
   </channel>
 </rss>
