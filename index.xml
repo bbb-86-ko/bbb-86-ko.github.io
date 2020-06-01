@@ -71,18 +71,7 @@
     </item>
     
     <item>
-      <title>jdk 14</title>
-      <link>https://bbb-86-ko.github.io/%EA%B0%9C%EB%B0%9C%EC%9E%90/jdk/jdk14/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bbb-86-ko.github.io/%EA%B0%9C%EB%B0%9C%EC%9E%90/jdk/jdk14/</guid>
-      <description>https://openjdk.java.net/projects/jdk/14/  Features 305:	Pattern Matching for instanceof (Preview) instanceof에 Pattern matching을 지원하는 기능이 이야기 되고 있는 것으로 보인다.
-Summary Pattern matching allows common logic in a program
-기존 instanceof 사용의 예. if (obj instanceof String) { String s = (String) obj; // use s } Motivation 기존의 처리는 1) type 확인, 2) type casting, 3) 새로운 local variable를 사용하고있다. 이런 사용은 코드를 장황하게 만든다. 그리고 3가지의 요인으로 프로그램에 에러가 발생할 수있는 상황을 만들 수있다.</description>
-    </item>
-    
-    <item>
-      <title>Spring Boot 2.3 Release Notes</title>
+      <title>2.3.X</title>
       <link>https://bbb-86-ko.github.io/%EA%B0%9C%EB%B0%9C%EC%9E%90/spring-boot/2.3.0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -93,6 +82,17 @@ Changes to minimum requirements  Gradle 6.3+. 5.6.x도 지원하지만 deprecate
 (많은 application이 validation features를 사용하지 않는다고 판단으로 기본 의존성에서 제외했다는데&amp;hellip;)
 issues 19550
 BootstrapMode for JPA repositories 기본 BootstrapMode는 deferred이고 startup 시간 개선했다.</description>
+    </item>
+    
+    <item>
+      <title>jdk 14</title>
+      <link>https://bbb-86-ko.github.io/%EA%B0%9C%EB%B0%9C%EC%9E%90/jdk/jdk14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bbb-86-ko.github.io/%EA%B0%9C%EB%B0%9C%EC%9E%90/jdk/jdk14/</guid>
+      <description>https://openjdk.java.net/projects/jdk/14/  Features 305:	Pattern Matching for instanceof (Preview) instanceof에 Pattern matching을 지원하는 기능이 이야기 되고 있는 것으로 보인다.
+Summary Pattern matching allows common logic in a program
+기존 instanceof 사용의 예. if (obj instanceof String) { String s = (String) obj; // use s } Motivation 기존의 처리는 1) type 확인, 2) type casting, 3) 새로운 local variable를 사용하고있다. 이런 사용은 코드를 장황하게 만든다. 그리고 3가지의 요인으로 프로그램에 에러가 발생할 수있는 상황을 만들 수있다.</description>
     </item>
     
   </channel>
